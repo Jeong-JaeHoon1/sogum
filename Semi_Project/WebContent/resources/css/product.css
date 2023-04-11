@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+/* productDetail */
+.pname1{width:180px;}
+.pcontent1{justify-content: center}
+.pcard1{justify-content: center}
+.thumb1{display:flex; gap:15px;}
+.thumbImg1{width:50px; height:50px;}
+.card1{max-width: 700px; border:none;}
+.prow1{margin-top: 30px;}
+.svgIcon{color: red;}
+.socialSvg{display: none;}
+.pimg1{height:80%; margin-top: 30px; border-radius: 5px;}
+.prow2{display: flex;}
+.row11{display: flex; align-items: center; justify-content: center;}

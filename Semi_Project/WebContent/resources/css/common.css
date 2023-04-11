@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+/* header */
+@media (max-width: 1800px) {
+    .container {
+        min-width: 1350px;
+    }
+}
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1350px;
+    }
+}
+.goods_search{display: flex;}
+.svg1{display: none;}
+.wrap22{font-family: 'Gamja Flower', cursive;}
+.img1{width:100px; height:100px;}
+.sellDiv{margin-left:0px;}
+.svg2{margin-left:300px; color:#BFE9F9}
+.h1h1{padding-left:130px;}
+.svg3{margin-left:40px; color:#BFE9F9}
+.nav1{background-color: #BFE9F9 !important;}
+.nav2{padding-right: 50px !important;}
+
+/* footer */
+#footer_1 a{
+    color: black;
+    text-decoration: none;
+    margin: 30px;
+}
+.svgF1{display: none;}
+.footer1{background-color: #BFE9F9;}
+.footerDiv1{margin:0 !important;}
+.footerUl1{margin-right:30px;}
+.footerP1{margin-left:25px;}

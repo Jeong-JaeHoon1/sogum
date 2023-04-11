@@ -15,18 +15,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap" rel="stylesheet">
-<style>
-    @media (max-width: 1800px) {
-                .container {
-                    min-width: 1350px;
-                }
-            }
-            @media (min-width: 1400px) {
-                .container {
-                    max-width: 1350px;
-                }
-            }
-</style>
+    <!-- header용 css -->
+    <link rel="stylesheet" href="../resources/css/common.css">
 </head>
 <body>
     <!-- Latest compiled JavaScript -->
@@ -34,7 +24,7 @@
     <!-- icon js cdn link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- 소셜 아이콘 -->
-    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <svg xmlns="http://www.w3.org/2000/svg" class="svg1">
         <symbol id="bootstrap" viewBox="0 0 118 94">
           <title>Bootstrap</title>
           <path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"></path>
@@ -51,31 +41,33 @@
     </svg>
 
     <br>
-    <div class="wrap1" style="font-family: 'Gamja Flower', cursive;">
+    <div class="wrap1 wrap22">
         <div class="container">
                 
             <div class="row">
-                <div class="col-sm-4"><img src="https://cdn.pixabay.com/photo/2018/05/13/16/57/dog-3397110__480.jpg" style="width:100px; height:100px;"></div>
+                <div class="col-sm-4"><img src="https://cdn.pixabay.com/photo/2018/05/13/16/57/dog-3397110__480.jpg" class="img1"></div>
                 <div class="col-sm-4">
                     <div class="input-group mb-3">
-                        <h1 style="padding-left:130px;">소금마켓</h1>
+                        <h1 class="h1h1">소금마켓</h1>
                     </div>
-                    <div style="display:flex;">
-                        <input type="text" class="form-control" placeholder="물품이나 동네를 검색해보세요">
-                        <button type="button" class="btn btn-outline-info">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                            </svg>    
-                        </button>
-                    </div>
+                    <form action="">
+                        <div class="goods_search">
+                            <input type="text" class="form-control" placeholder="물품이나 동네를 검색해보세요">
+                            <button type="button" class="btn btn-outline-info">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                </svg>    
+                            </button>
+                        </div>
+                    </form>
                 </div>
-                <div class="col-sm-4" style="margin-left:0px;">
+                <div class="col-sm-4 sellDiv">
                     <br><br>
-                    <svg xmlns="http://www.w3.org/2000/svg" style="margin-left:300px; color:#BFE9F9" width="30" height="30" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person svg2" viewBox="0 0 16 16">
                         <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
                     </svg>
                 
-                    <svg xmlns="http://www.w3.org/2000/svg" style="margin-left:40px; color:#BFE9F9" width="30" height="30" fill="currentColor" class="bi bi-coin" viewBox="0 0 16 16">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-coin svg3" viewBox="0 0 16 16">
                         <path d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9H5.5zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518l.087.02z"/>
                         <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
                         <path d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11zm0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"/>
@@ -86,24 +78,24 @@
             </div>
             <br>
 
-            <nav class="navbar navbar-expand-sm bg-light navbar-light" style="background-color: #BFE9F9 !important;">
+            <nav class="navbar navbar-expand-sm bg-light navbar-light nav1">
                 <div class="container-fluid d-flex justify-content-center">
                     <ul class="navbar-nav">
 
                         <li class="nav-item">
-                        <a class="nav-link active" href="#" style="padding-right: 50px;">홈</a>
+                        <a class="nav-link active nav2" href="#">홈</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="#" style="padding-right: 50px;">카테고리</a>
+                        <a class="nav-link nav2" href="#">카테고리</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="#" style="padding-right: 50px;">자유/나눔게시판</a>
+                        <a class="nav-link nav2" href="#">자유/나눔게시판</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" style="padding-right: 50px;">시세조회</a>
+                        <a class="nav-link nav2" href="#">시세조회</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#" style="padding-right: 50px;">고객센터</a>
+                        <a class="nav-link nav2" href="#">고객센터</a>
                         </li>
                     </ul>
                 </div>

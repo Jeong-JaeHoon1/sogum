@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../resources/css/bootstrap.min.css">
+
+    <!-- 외부방식 board.css -->
+    <link rel="stylesheet" href="../../resources/css/board.css">
+
+    <!-- 구글 감자플리워 폰트 적용 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap" rel="stylesheet">
+
+    <!-- 폰트어썸 아이콘 적용 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+
+
+
+
+    <div id="outer">
+
+        <!-- header 부분 -->
+        <div id="header">
+
+        </div>
+
+        <!-- 왼쪽여백 -->
+        <div id="left"></div>
+
+        <!-- 가운데 내용 -->
+        <div id="center">
+            <h1 class="centertitle">OO게시판</h1>
+
+            <hr>
+
+            <h5 class="black boardtitle" style="font-size: 22px;">제목 : 가방 나눔합니다!!</h5>
+
+            <hr>
+
+            <div id="board-info" style="margin-top: 5px;">
+                <a href="" class="black underline-none"><i class="fas fa-user" style="color: #000000;"></i>
+                    짠돌이123</a>&nbsp;
+                <i class="far fa-comment-dots" style="color: #000000;"></i>
+                &nbsp;5 &nbsp;
+                <i class="fas fa-eye" style="color: #000000;"></i>
+                &nbsp;125
+                <div id="board-date">
+                    2023.03.23 18:52
+                </div>
+            </div>
+
+            <div id="board-content" style="margin-top: 5px;">
+                <pre > 작년에 사서 여름즈음 쓰려고 넣어놨더니 좀 구깃~😅
+
+소지품 넣고 갖고다님 괜찮을 거에요
+
+아주 가벼운 원단
+
+그새 다른 가방이 생겨서 갖구 왔어요^^
+
+늘 그렇듯 사진보다 밝고 예쁜 연베이지색
+
+신청양식 - (신청/주절자유)
+
+당발 - 내일(24일) 오후 7시 (늦빠당가능)
+
+배송 - 택배 3,000원 
+
+
+밖엔 따뜻한데 미먼이 있고
+
+실내는 춥고...🤣
+
+감기조심 하시고 행복한 저녁시간 되세요♡
+</pre>
+            </div>
+            <div id="recommend">
+                <button id="like" class="clear-button"><i class="far fa-thumbs-up fa-lg" style="color: #000000;"></i>
+                    <span id="like-count">151</span></button>
+
+                <button id="dislike" class="clear-button"><i class="far fa-thumbs-down fa-lg"
+                        style="color: #000000;"></i> <span id="dislike-count">27</span></button>
+
+                <button type="button" class="btn-margin btn btn-outline-primary btn-sm">수정</button>
+                <button type="button" class="btn btn-outline-danger btn-sm">삭제</button>
+            </div>
+
+            <br>
+            <hr>
+            <br>
+
+            <!-- 댓글 입력 폼 -->
+            <form action="" method="post">
+                <div style="display: flex; align-items: center; background-color: #BFE9F9; padding: 15px;">
+                    <label id="comment-title" for="comment">댓글:</label>
+
+                    <textarea id="comment" name="comment" rows="3" cols="50" style="resize: none; margin-right: 5px;"
+                        required></textarea>
+
+                    <input type="submit" value="작성">
+                </div>
+            </form>
+
+            <br>
+
+            <!-- 댓글 목록 더미 -->
+            <div class="comments">
+                <div class="comment">
+                    <div class="comment-info">
+                        <i class="fas fa-user" style="color: #000000;"></i>
+                        <a href="" class="black underline-none"><span class="comment-author">소금이123</span></a>
+                        <span class="comment-date">2023.03.24 20:30</span>
+                        <p class="comment-content">이 글 참 유익하네요. 감사합니다!</p>
+                    </div>
+                </div>
+                <div class="comment">
+                    <div class="comment-info">
+                        <i class="fas fa-user" style="color: #000000;"></i>
+                        <a href="" class="black underline-none"><span class="comment-author">짠순이123</span></a>
+                        <span class="comment-date">2023.03.24 20:30</span>
+                        <p class="comment-content">저도 이 글을 보고 많은 도움을 받았습니다. 감사합니다!</p>
+                    </div>
+                </div>
+                <div class="comment">
+                    <div class="comment-info">
+                        <i class="fas fa-user" style="color: #000000;"></i>
+                        <a href="" class="black underline-none"><span class="comment-author">짠돌이123</span></a>
+                        <span class="comment-date">2023.03.24 20:30</span>
+                        <p class="comment-content">이 글이 제게 큰 도움이 되었습니다. 저도 감사의 말씀을 전합니다!</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+            <!-- 오른쪽여백 -->
+            <div id="right"></div>
+
+
+            <!-- footer부분 -->
+            <div id="footer"></div>
+
+        </div>
+
+        <!-- 좋아요/싫어요 클릭이벤트 -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                var liked = false;
+                var disliked = false;
+                var likeButton = $('#like');
+                var dislikeButton = $('#dislike');
+                var likeIcon = likeButton.find('i');
+                var dislikeIcon = dislikeButton.find('i');
+                var likeCount = likeButton.find('#like-count');
+                var dislikeCount = dislikeButton.find('#dislike-count');
+
+                likeButton.on('click', function () {
+                    if (liked) {
+                        likeIcon.removeClass('fas').addClass('far');
+                        likeCount.text(parseInt(likeCount.text()) - 1);
+                        liked = false;
+                    } else {
+                        likeIcon.removeClass('far').addClass('fas');
+                        likeCount.text(parseInt(likeCount.text()) + 1);
+                        liked = true;
+                        if (disliked) {
+                            dislikeIcon.removeClass('fas').addClass('far');
+                            dislikeCount.text(parseInt(dislikeCount.text()) - 1);
+                            disliked = false;
+                        }
+                    }
+                });
+
+                dislikeButton.on('click', function () {
+                    if (disliked) {
+                        dislikeIcon.removeClass('fas').addClass('far');
+                        dislikeCount.text(parseInt(dislikeCount.text()) - 1);
+                        disliked = false;
+                    } else {
+                        dislikeIcon.removeClass('far').addClass('fas');
+                        dislikeCount.text(parseInt(dislikeCount.text()) + 1);
+                        disliked = true;
+                        if (liked) {
+                            likeIcon.removeClass('fas').addClass('far');
+                            likeCount.text(parseInt(likeCount.text()) - 1);
+                            liked = false;
+                        }
+                    }
+                });
+            });
+        </script>
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+@media (max-width: 3000px) {
+  .container {
+    min-width: 1350px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1350px;
+  }
+}
+
+body {
+  background-color: white;
+  font-family: "Gamja Flower", cursive;
+}
+.btn-primary {
+  background-color: rgb(191, 233, 249);
+  border-color: rgb(191, 233, 249);
+}
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+.row {
+  width: 100%;
+  height: 100%;
+}
+.col {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  padding: 0px;
+  margin: 0px;
+}
+#category1 h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+#category1 > div > #category1_icon {
+  width: 90px;
+}
+#category1 > div > #category1_select > select {
+  height: 37px;
+  padding: 2px 0px 0px 20px;
+  font-size: 21px;
+}
+#category2 > div > div {
+  height: 40px;
+  width: 264px;
+  border: 1px solid black;
+  margin: 0.3px;
+  padding: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: var(--bs-border-radius);
+  background-color: white;
+  color: #bfe9f9;
+}
+#category3 div {
+  font-size: 23px;
+}
+#category3 > div > .category3_left {
+  width: 995px;
+}
+#category3 > div > .category3_left > p {
+  display: inline;
+  font-weight: bold;
+}
+#category3 > div > .category3_left > #category_name {
+  color: rgb(191, 233, 249);
+}
+#category3 > div > .category3_left > #category_count {
+  color: rgb(191, 233, 249);
+}
+#category3 > div > .category3_right {
+  width: 80px;
+  text-align: end;
+  padding: 0%;
+}
+#category3 > div > .category3_right_1 {
+  width: 65px;
+  text-align: end;
+  padding: 0%;
+}
+#category3 > div > .category3_right > a {
+  text-decoration: none;
+  color: rgb(191, 233, 249);
+}
+#category3 > div > .category3_right_1 > a {
+  text-decoration: none;
+  color: rgb(191, 233, 249);
+}
+#view_count {
+  display: flex;
+  justify-content: end;
+  width: 1320px;
+  margin-bottom: 20px;
+}
+#thumbnail img {
+  height: 142px;
+  border-bottom: 1px solid black;
+}
+#thumbnail > div > div {
+  width: 325px;
+  margin: 3px;
+}
+#thumbnail > div > div > .card {
+  width: 320px;
+  border: 1px solid black;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
